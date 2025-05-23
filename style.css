@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4b5b9;
+  position: relative;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 12vh;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 51px;
+  width: 100%;
+  z-index: 1;
+  color: black;
+  font-size: 15px;
+  background-color: white;
+}
+
+.saleStrip {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  height: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.saleStripTrack {
+  display: inline-block;
+  animation: slideRight 10s linear infinite;
+}
+
+.saleStripText {
+  margin-right: 50px;
+  display: inline-block;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+main {
+  margin-top: 180px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 50px;
+}
+
+main h3 {
+  font-size: 25px;
+}
+
+main button {
+  background-color: #cb6ee2;
+  padding: 10px 40px 10px 40px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.stickybuybtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #cb6ee2;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.cardCont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  border: 2px solid;
+  text-align: center;
+  width: fit-content;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 20px;
+}
+
+/* .beautyCont{
+
+} */
+
+.beautyCont img {
+  height: 250px;
+}

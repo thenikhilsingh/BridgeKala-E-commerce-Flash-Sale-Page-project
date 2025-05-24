@@ -10,6 +10,7 @@ body {
 
 header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 12vh;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -20,6 +21,9 @@ header {
   color: black;
   font-size: 15px;
   background-color: white;
+}
+header h1 {
+  padding: 20px;
 }
 
 .saleStrip {
@@ -113,3 +117,42 @@ main button {
 .beautyCont img {
   height: 250px;
 }
+
+.timer-Cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 25px;
+}
+
+.days :first-child,
+.hours :first-child,
+.minutes :first-child,
+.seconds :first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.count {
+  background-color: #cb6ee2;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.dark-light-mode {
+  height: 40px;
+  padding: 20px;
+}
+

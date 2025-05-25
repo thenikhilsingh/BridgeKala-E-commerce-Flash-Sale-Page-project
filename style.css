@@ -15,7 +15,7 @@ header {
   height: 12vh;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   position: fixed;
-  top: 51px;
+  top: 50px;
   width: 100%;
   z-index: 1;
   color: black;
@@ -39,6 +39,7 @@ header h1 {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .saleStripTrack {
@@ -83,6 +84,18 @@ main button {
   border: none;
   color: white;
   font-weight: bold;
+  border: 2px solid #f4b5b9;
+  cursor: pointer;
+}
+
+main button:hover {
+  border: 2px solid #cb6ee2;
+  background-color: white;
+  color: #cb6ee2;
+}
+
+main button:active {
+  scale: 1.1;
 }
 
 .stickybuybtn {
@@ -95,11 +108,24 @@ main button {
   border: none;
   color: white;
   font-weight: bold;
+  border: 2px solid #f4b5b9;
+  cursor: pointer;
 }
+
+.stickybuybtn:hover {
+  border: 2px solid #cb6ee2;
+  background-color: white;
+  color: #cb6ee2;
+}
+.stickybuybtn:active {
+  scale: 1.1;
+}
+
 .cardCont {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 40px;
 }
 .card {
   border: 2px solid;
@@ -110,12 +136,13 @@ main button {
   font-size: 20px;
 }
 
-/* .beautyCont{
-
-} */
+.beautyCont {
+  padding: 40px;
+}
 
 .beautyCont img {
   height: 250px;
+  border-radius: 8px;
 }
 
 .timer-Cont {
@@ -156,3 +183,204 @@ main button {
   padding: 20px;
 }
 
+.productionInfoCont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+}
+.productDet {
+  width: 40vw;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quantityCont {
+  display: flex;
+  gap: 5px;
+}
+
+.quantityCont :nth-child(1),
+.quantityCont :nth-child(2),
+.quantityCont :nth-child(3) {
+  border: 2px solid;
+  font-size: 22px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: #cb6ee2;
+  border: 2px solid #f4b5b9;
+}
+
+.quantityCont :nth-child(1):hover {
+  border: 2px solid #cb6ee2;
+  background-color: white;
+  color: #cb6ee2;
+  cursor: pointer;
+}
+.quantityCont :nth-child(1):active {
+  scale: 1.1;
+}
+.quantityCont :nth-child(3):hover {
+  border: 2px solid #cb6ee2;
+  background-color: white;
+  color: #cb6ee2;
+  cursor: pointer;
+}
+.quantityCont :nth-child(3):active {
+  scale: 1.1;
+}
+
+.quantityCont :nth-child(2) {
+  background-color: white;
+}
+
+.checkout {
+  background-color: #cb6ee2;
+  padding: 10px 40px 10px 40px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #f4b5b9;
+}
+
+.checkout:hover {
+  border: 2px solid #cb6ee2;
+  background-color: white;
+  color: #cb6ee2;
+  cursor: pointer;
+}
+
+.checkout:active {
+  scale: 1.1;
+}
+
+footer {
+  background-color: #fff;
+  padding: 60px 30px;
+  margin-top: 50px;
+  text-align: center;
+  border-top: 2px solid #ccc;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #cb6ee2;
+}
+
+.footer-copy {
+  font-size: 16px;
+  color: #777;
+}
+
+.image-slider {
+  position: relative;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+
+.image-slider img {
+  width: 350px;
+  height: 350px;
+  border-radius: 12px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffffcc;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: -60px;
+}
+
+.right-arrow {
+  right: -110px;
+}
+/* DARK MODE BASE */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode header,
+.dark-mode .saleStrip,
+.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p {
+  color: #ffffff;
+}
+
+.dark-mode .card,
+.dark-mode .productDet,
+.dark-mode .beautyCont > div,
+.dark-mode .productionInfoCont {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+}
+
+.dark-mode .checkout,
+.dark-mode .qty-decrease,
+.dark-mode .qty-increase,
+.dark-mode .stickybuybtn {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode .checkout:hover,
+.dark-mode .qty-decrease:hover,
+.dark-mode .qty-increase:hover {
+  background-color: #666;
+}
+
+#darkModeToggle {
+  cursor: pointer;
+  height: 32px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.beauties {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f3d3d6;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}

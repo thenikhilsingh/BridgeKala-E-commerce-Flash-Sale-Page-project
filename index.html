@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GlowMix Skincare</title>
+    <link rel="shortcut icon" href="/assets/logoIcon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,8 +25,14 @@
     </div>
     <header>
       <h1>GlowMix Skincare</h1>
-      <img class="dark-light-mode" src="assets/moon.png" alt="" />
+      <img
+        class="dark-light-mode"
+        id="darkModeToggle"
+        src="assets/moon.png"
+        alt=""
+      />
     </header>
+
     <main>
       <div
         style="
@@ -71,14 +78,14 @@
           </div>
           <p style="font-size: 25px">Only 8 bottles left!</p>
         </div>
-        <button style="width: fit-content">Buy Now</button>
+        <a href="#ProductId"
+          ><button style="width: fit-content">Buy Now</button></a
+        >
       </div>
-      <div>
-        <img style="height: 400px" src="assets/modelImg.png" alt="" />
-      </div>
+      <div><img style="height: 400px" src="assets/modelImg.png" alt="" /></div>
     </main>
 
-    <div>
+    <div style="margin-top: 10px">
       <div><h1>Product Benefits</h1></div>
       <hr />
       <div class="cardCont">
@@ -110,91 +117,91 @@
       <h1>Before & After Gallery</h1>
       <hr />
       <div class="beautyCont">
-        <div
-          style="
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-          "
-        >
-          <img src="assets/beauty1.webp" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
-            corporis nulla accusamus, fugiat deleniti facere optio vitae animi
-            atque nostrum et minima minus nesciunt veritatis fugit nemo
-            explicabo. Commodi molestiae quibusdam ullam quia esse! In debitis
-            reprehenderit tenetur maxime quas!
+        <div class="beauties">
+          <img src="assets/beauty1.avif" alt="" />
+          <p style="width: 50vw">
+            After just 2 weeks of using our Vitamin C Serum, Priya noticed a
+            visible reduction in dark spots and dullness. Her skin looks
+            brighter, healthier, and more even-toned.
           </p>
         </div>
-        <div
-          style="
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-          "
-        >
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
-            corporis nulla accusamus, fugiat deleniti facere optio vitae animi
-            atque nostrum et minima minus nesciunt veritatis fugit nemo
-            explicabo. Commodi molestiae quibusdam ullam quia esse! In debitis
-            reprehenderit tenetur maxime quas!
+        <div class="beauties">
+          <p style="width: 50vw">
+            Sofie struggled with acne scars and rough texture. With daily use of
+            GlowMix Serum, her skin became smoother, and scars visibly faded
+            within a month.
           </p>
           <img src="assets/beauty2.jpg" alt="" />
         </div>
-        <div
-          style="
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-          "
-        >
-          <img src="assets/beauty3.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
-            corporis nulla accusamus, fugiat deleniti facere optio vitae animi
-            atque nostrum et minima minus nesciunt veritatis fugit nemo
-            explicabo. Commodi molestiae quibusdam ullam quia esse! In debitis
-            reprehenderit tenetur maxime quas!
+        <div class="beauties">
+          <img src="assets/beauty3.webp" alt="" />
+          <p style="width: 50vw">
+            From tired and patchy skin to a natural radiant glow — this
+            transformation took just 3 weeks of consistent use. GlowMix revives
+            your skin from within.
           </p>
         </div>
       </div>
     </div>
-    <div>
+
+    <div id="ProductId">
       <h1>Product Information</h1>
       <hr />
-      <div>
+      <div class="productionInfoCont">
         <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-        </div>
-        <div>
-          <h2>Vitamin C Serum</h2>
-          <div>
-            <p>₹899</p>
-            <p><del>₹1200</del></p>
+          <div class="image-slider">
+            <button class="arrow left-arrow">&#10094;</button>
+            <img
+              class="product-image"
+              src="assets/productimg1.webp"
+              alt="Product Image"
+            />
+            <button class="arrow right-arrow">&#10095;</button>
           </div>
-          <hr>
-          <p>Give your skin the care it deserves with our Vitamin C Serum – designed to brighten dull skin, fade dark spots, and even out your complexion. Enriched with antioxidants, it hydrates deeply and supports collagen production for firmer, smoother skin. Its lightweight, non-sticky formula absorbs quickly, making it ideal for daily use on all skin types.</p>
-          <div>
+        </div>
+        <div class="productDet">
+          <h2>Vitamin C Serum</h2>
+          <div style="display: flex; gap: 10px">
+            <p>₹899</p>
+            <p><del style="color: rgb(66, 65, 65)">₹1200</del></p>
+          </div>
+          <hr />
+          <p>Give your skin the care it deserves with our Vitamin C Serum...</p>
+          <div style="display: flex; gap: 5px">
             <p>Rating:</p>
-            <p>4.95/5</p>
+            <p style="color: rgb(66, 65, 65)">4.95/5</p>
           </div>
           <div>Free returns policy</div>
           <div>Ships in 1-2 Days</div>
           <div>Secure Checkout</div>
           <div class="quantityCont">
-            <div>-</div>
-            <div>1</div>
-            <div>+</div>
+            <div class="qty-decrease">-</div>
+            <div class="qty-value">1</div>
+            <div class="qty-increase">+</div>
           </div>
+          <p style="font-size: 20px; font-weight: bold; margin-top: 10px">
+            Only 8 bottles left!
+          </p>
           <div>
-            <button>Checkout</button>
+            <button class="checkout">Checkout</button>
           </div>
         </div>
       </div>
     </div>
-    <button class="stickybuybtn">Buy Now</button>
+
+    <footer>
+      <div class="footer-links">
+        <a href="#">T&Cs</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Support</a>
+        <a href="https://www.instagram.com/_thakurnikhilsingh_" target="_blank"
+          >Instagram</a
+        >
+      </div>
+      <p class="footer-copy">© 2025 GlowMix Skincare. All rights reserved.</p>
+    </footer>
+
+    <a href="#ProductId"><button class="stickybuybtn">Buy Now</button></a>
+    <script src="script.js"></script>
   </body>
 </html>

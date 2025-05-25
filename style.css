@@ -126,6 +126,7 @@ main button:active {
   justify-content: space-around;
   align-items: center;
   padding: 40px;
+  flex-wrap: wrap;
 }
 .card {
   border: 2px solid;
@@ -383,4 +384,75 @@ body.dark-mode {
   padding: 10px;
   border-radius: 8px;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1012px) {
+  .productionInfoCont {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .modelPhoto {
+    display: none;
+  }
+  main {
+    justify-content: center;
+    margin-top: 150px;
+  }
+
+  .beauties {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 740px) {
+  .card {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main h1 {
+    font-size: 35px;
+  }
+  .head2 {
+    font-size: 25px;
+  }
+
+  .beautyCont img {
+    height: 200px;
+  }
+
+  .image-slider img {
+    width: 265px;
+    height: 265px;
+  }
+  .right-arrow {
+    right: -58px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .beauties3img {
+    width: 300px;
+  }
+
+  .head1 {
+    font-size: 25px;
+  }
+  .head2 {
+    font-size: 15px;
+  }
+  .timer-Cont h2 {
+    font-size: 15px;
+  }
+  .timer {
+    font-size: 10px;
+  }
+
+  .beautyCont img {
+    height: 150px;
+  }
+  .beauties3img {
+    width: 250px;
+  }
 }
